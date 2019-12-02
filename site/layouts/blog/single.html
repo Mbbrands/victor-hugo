@@ -1,0 +1,19 @@
+{{ define "main" }}
+
+  <div class="fl mw6 ph3 pv4">
+    <h1 class="f2 lh-title b mb3">{{.Title}}</h1>
+    <div class="flex justify-between grey-3">
+      <p>{{ .Date.Format "Mon, Jan 2, 2006" }}</p>
+      <p>Read in {{ .ReadingTime }} minutes</p>
+    </div>
+    <div class="cms mw6">
+     
+      {{ .Content }}
+    </div>
+  </div>
+
+<div class="fl mw5 ph1 pv4">
+  <p>Subscribe to our newsletter!</p>
+   </div>
+  
+{{ end }}
